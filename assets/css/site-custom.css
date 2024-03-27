@@ -1,0 +1,55 @@
+.blocked {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+.react-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.react-icons .ri-inner-items {
+  width: 105px;
+  height: 105px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
+  position: relative;
+  text-align: center;
+}
+.react-icons .ri-badge {
+  position: absolute;
+  right: 10px;
+  border-radius: 1.75em;
+  min-width: 2.25em;
+  font: 600 0.8em "Muli", arial, sans-serif;
+  background: #e84855;
+  color: #fff;
+  border: 0.25em solid #fff;
+  padding: 0.25em;
+  cursor: pointer;
+  z-index: 1;
+}
+.react-icons .ri-radio-btn {
+  display: none;
+}
+.react-icons .ri-radio-btn ~ .ri-emoji {
+  font-size: 3rem;
+  filter: grayscale(100);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.react-icons .ri-radio-btn ~ .ri-txt {
+  color: rgb(167, 167, 167);
+  transition: 0.3s;
+}
+.react-icons .clicked .ri-radio-btn ~ .ri-emoji {
+  filter: grayscale(0);
+  font-size: 4rem;
+}
+.react-icons .clicked .ri-radio-btn ~ .ri-txt {
+  color: #010101;
+}
